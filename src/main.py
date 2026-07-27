@@ -3,6 +3,7 @@ import argparse
 
 from .train import train_and_evaluate
 
+# Build command-line argument parser
 def build_parser():
     p = argparse.ArgumentParser(description="MNIST Hello World (TensorFlow/Keras)")
     p.add_argument("--data-raw-dir", default="data/raw", help="raw dataset dir (mnist.npz cache)")
